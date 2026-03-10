@@ -51,7 +51,7 @@ L'architecture repose sur plusieurs concepts clés de la Programmation Orientée
 + #strong[Quelle partie du code permet d'ajouter facilement de nouveaux ingrédients ?]
   - C'est le #strong[Pattern Décorateur] (les classes héritant de `DecorateurBoisson`). Pour ajouter un ingrédient, il suffit de créer une nouvelle petite classe sans toucher au reste du code.
 
-+ #strong[Si nous voulions ajouter une nouvelle boisson (chocolat chaud), quelles classes devraient être modifiées ?] 
++ #strong[Si nous voulions ajouter une nouvelle boisson (chocolat chaud), quelles classes devraient être modifiées ?]
   - #strong[Aucune classe existante] ne doit être modifiée. Il suffit de créer une nouvelle classe `ChocolatChaud` qui hérite de `Boisson`. C'est le principe de l'ouverture à l'extension.
 
 + #strong[Pourquoi séparer les responsabilités entre plusieurs classes rend le programme plus facile à maintenir ?]
@@ -59,5 +59,9 @@ L'architecture repose sur plusieurs concepts clés de la Programmation Orientée
 
 = Exemple d'exécution
 #figure(
-  image("screenshot.png", width: 70%)
+  image("screenshot.png", width: 70%),
 )
+
+#align(center)[
+  #link("https://github.com/bilal-houari/m361")[Code source sur GitHub]
+]
